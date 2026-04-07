@@ -13,14 +13,21 @@ To improve efficiency, I created an automated solution that generates hourly net
 > **Note**:
 > _Although Speedtest CLI by Ookla is available, it is primarily intended for personal or educational use. To avoid potential licensing issues, this project uses Fast CLI instead._
 
+**Installation**:
+- Install [NodeJS](https://nodejs.org/en/download) and npm package inside NodeJS.
+- Install [Fast](https://github.com/sindresorhus/fast-cli) using the official documentation.
+- [Example Scripts](./resources/fast-cli.ps1)
+
+
 **Technologies Used:**
 
 - Fast CLI – Internet speed testing tool powered by Fast.com 
 - PowerShell – Script automation
 - Task Scheduler – Schedule hourly execution
 - JSON – Structured data handling
-- Node.js – Required to run Fast CLI
-
+- NodeJS – Required to run Fast CLI
+- ChatGPT - Coding (I don't code but I have basic knowleged of it)
+  
 **How It Works**
 
 - Fast CLI runs via a PowerShell script
