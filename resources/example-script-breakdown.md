@@ -1,9 +1,4 @@
-# Speedtest Automation Script
-
-This PowerShell script automates internet speed testing using [Fast CLI](https://github.com/sindresorhus/fast-cli) and logs the results into a CSV file. It also handles errors and timestamps each entry for easy tracking.
-
-
----
+# Script Breakdown
 
 ## Prerequisites
 
