@@ -17,7 +17,7 @@ Start-Sleep -Seconds 20
 ## 4. Define Fast CLI path installed
 Points to the location of the fast.ps1 script:
 ```powershell
-$fastPath = "C:\Users\Lee\AppData\Roaming\npm\fast.ps1"
+$fastPath = "C:\Users\(your username)\AppData\Roaming\npm\fast.ps1"
 ```
 ## 5. Run Fast CLI and Capture Output
 Executes Fast CLI with elevated execution policy and captures JSON output:
