@@ -11,4 +11,4 @@ npm install --global fast-cli
 ```powershell
 C:\Speedtest
 ```
-3. 
+3. fast.ps1
