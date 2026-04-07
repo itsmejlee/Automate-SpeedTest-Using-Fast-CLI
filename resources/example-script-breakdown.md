@@ -24,7 +24,7 @@ Executes Fast CLI with elevated execution policy and captures JSON output:
 ```powershell
 $jsonText = powershell -ExecutionPolicy Bypass -File $fastPath --upload --latency --json 2>&1 | Out-String
 ```
-## 4. Error Handling
+## 6. Error Handling
 Logs any non-JSON output to an error file:
 ```powershell
 if (-not $jsonText.Trim().StartsWith("{")) {
@@ -32,13 +32,13 @@ if (-not $jsonText.Trim().StartsWith("{")) {
     return
 }
 ```
-## 5. Parse JSON and Add Timestamp
+## 7. Parse JSON and Add Timestamp
 Converts JSON output into a PowerShell object and adds a timestamp:
 ```powershell
 $resultJson = $jsonText | ConvertFrom-Json
 $DateTime = Get-Date -Format "dd-MM-yyyy HH:mm:ss"
 ```
-## 6. Prepare Data for CSV
+## 8. Prepare Data for CSV
 Creates a custom object with the relevant speed test information:
 ```powershell
 $data = [PSCustomObject]@{
@@ -49,7 +49,7 @@ $data = [PSCustomObject]@{
     Latency_ms = $resultJson.latency
 }
 ```
-## 7. Export to CSV
+## 9. Export to CSV
 Appends the results to a CSV file
 ```powershell
 $csvPath = "C:\Speedtest\speedtest_results.csv"
