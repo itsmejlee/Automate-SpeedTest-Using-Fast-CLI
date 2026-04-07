@@ -15,7 +15,7 @@ To improve efficiency, I created a PowerShell script automates internet speed te
 **Installation**:
 - Install [NodeJS](https://nodejs.org/en/download) and npm package inside NodeJS.
 - Install [Fast](https://github.com/sindresorhus/fast-cli) using the official documentation.
-- [Example Scripts](./resources/fast-cli.ps1)
+- [Example Scripts](./resources/example-script-breakdown.md)
 
 
 **Technologies Used:**
