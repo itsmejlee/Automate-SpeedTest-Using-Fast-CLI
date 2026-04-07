@@ -7,8 +7,7 @@
 
 As part of my daily taks, I am required to report the bandwidth of three ISPs every hour. Doing this task manually is time-consuming, especially while handling other tasks.
 
-To improve efficiency, I created an automated solution that generates hourly network speed reports using Fast CLI. This allows consistent monitoring with minimal manual intervention.
-
+To improve efficiency, I created a PowerShell script automates internet speed testing using [Fast CLI](https://github.com/sindresorhus/fast-cli) and logs the results into a CSV file. It also handles errors and timestamps each entry for easy tracking.
 
 > **Note**:
 > _Although Speedtest CLI by Ookla is available, it is primarily intended for personal or educational use. To avoid potential licensing issues, this project uses Fast CLI instead._
@@ -28,7 +27,7 @@ To improve efficiency, I created an automated solution that generates hourly net
 - NodeJS – Required to run Fast CLI
 - ChatGPT - Coding (I don't code but I have basic knowleged of it)
   
-**How It Works**
+**How It works**
 
 - Fast CLI runs via a PowerShell script
 - The script captures the speed test result in JSON format
