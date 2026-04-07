@@ -55,3 +55,15 @@ Appends the results to a CSV file
 $csvPath = "C:\Speedtest\speedtest_results.csv"
 $data | Export-Csv $csvPath -Append -NoTypeInformation
 ```
+## 10. Save your file as filename.ps1
+
+# Usage
+1. Copy or download this repository.
+2. Open PowerShell with proper permissions.
+3. Run the script:
+```powershell
+.\speedtest_script.ps1
+```
+5. Check the C:\Speedtest\speedtest_results.csv for logged results.
+6. Errors, if any, are logged in C:\Speedtest\fast_error.log.
+7. Lastly, to automate the script I used [Windows Task Scheduler](./resources/automate-using-task-scheduler.md)
