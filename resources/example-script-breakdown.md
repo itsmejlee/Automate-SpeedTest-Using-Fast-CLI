@@ -7,7 +7,7 @@ npm install --global fast-cli
 ```
 ## 2. Create a folder where you want to put the script & CSV files.
 ```powershell
-C:\Speedtest
+C:\NetworkTest
 ```
 ## 3. Delay execution
 Adds a short delay to allow the system to stabilize before running the test
@@ -28,7 +28,7 @@ $jsonText = powershell -ExecutionPolicy Bypass -File $fastPath --upload --latenc
 Logs any non-JSON output to an error file:
 ```powershell
 if (-not $jsonText.Trim().StartsWith("{")) {
-    $jsonText | Out-File "C:\Speedtest\fast_error.log" -Append
+    $jsonText | Out-File "C:\NetworkTest\fast_error.log" -Append
     return
 }
 ```
@@ -52,17 +52,21 @@ $data = [PSCustomObject]@{
 ## 9. Export to CSV
 Appends the results to a CSV file
 ```powershell
-$csvPath = "C:\Speedtest\speedtest_results.csv"
+$csvPath = "C:\NetworkTest\networktest_results.csv"
 $data | Export-Csv $csvPath -Append -NoTypeInformation
 ```
 ## 10. Save your file as filename.ps1
+In my case:
+```powershell
+.\networktest_script.ps1
+```
 
 # Usage
 1. Copy or download this repository.
 2. Open PowerShell with proper permissions.
 3. Run the script:
 ```powershell
-.\speedtest_script.ps1
+.\networktest_script.ps1
 ```
 5. Check the C:\Speedtest\speedtest_results.csv for logged results.
 6. Errors, if any, are logged in C:\Speedtest\fast_error.log.
