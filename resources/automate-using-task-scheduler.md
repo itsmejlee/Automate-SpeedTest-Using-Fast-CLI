@@ -1,5 +1,5 @@
 # Windows Task Scheduler
-Is a built in feature in Windows environment where you can automate task such as patching, reporting and etc.
+Is a built in feature in Windows where you can automate task such as patching, reporting and etc.
 
 ## 1. Open Task Scheduler
 Click Create Task
@@ -37,6 +37,21 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
 
 ## 6. Check the results and errors.
 <img width="1918" height="427" alt="image" src="https://github.com/user-attachments/assets/09b19ca3-4ca4-4661-b380-cbf5a255f722" />
+
+**Results**:
+
+<img width="714" height="254" alt="results-csv" src="https://github.com/user-attachments/assets/c28fb7be-5cf4-4a3c-8ff0-37f2b9ecc529" />
+
+Errors:
+```powershell
+powershell : Please check your internet connection
+At C:\NetworkTest\networktest_script.ps1:5 char:13
++ $jsonText = powershell -ExecutionPolicy Bypass -File $fastPath --uplo ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Please check your internet connection:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+```
 
 
 
